@@ -1,0 +1,62 @@
+{
+    "_args": [
+      [
+        "react-native-ba-libs@1.0.0",
+        "D:\\Android\\Staxi_Apps\\AppLX\\Code\\RN-Staxi"
+      ]
+    ],
+    "_from": "react-native-ba-libs@1.0.0",
+    "_id": "react-native-ba-libs@1.0.0",
+    "_inBundle": false,
+    "_integrity": "sha1-yKt9JUf82RMyp791nEcXSamr0Yc=",
+    "_location": "/react-native-ba-libs",
+    "_phantomChildren": {
+      "plist": "1.2.0"
+    },
+    "_requested": {
+      "type": "version",
+      "registry": true,
+      "raw": "react-native-ba-libs@1.0.0",
+      "name": "react-native-ba-libs",
+      "escapedName": "react-native-ba-libs",
+      "rawSpec": "1.0.0",
+      "saveSpec": null,
+      "fetchSpec": "1.0.0"
+    },
+    "_requiredBy": [
+      "/"
+    ],
+    "_resolved": "",
+    "_spec": "1.0.0",
+    "_where": "D:\\Android\\Staxi_Apps\\AppLX\\Code\\RN-Staxi",
+    "author": {
+      "name": "Nguyen Duc Luc"
+    },
+    "bugs": {
+      "url": "http://staxi.vn/issues"
+    },
+    "dependencies": {
+      "xcode": "0.8.9"
+    },
+    "description": "Share code react native for BA Project",
+    "homepage": "http://staxi.vn",
+    "keywords": [
+     
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "react-native-ba-libs",
+    "peerDependencies": {
+      "react-native": ">=0.55.0"
+    },
+    "repository": {
+     
+    },
+    "rnpm": {
+      
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified yet\" && exit 1"
+    },
+    "version": "1.0.0"
+  }

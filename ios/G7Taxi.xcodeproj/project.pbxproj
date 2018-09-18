@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BBFC08213E8178006CF1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBFC07213E8178006CF1E9 /* AppDelegate.swift */; };
+		84BBFC0A213E8178006CF1E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBFC09213E8178006CF1E9 /* ViewController.swift */; };
+		84BBFC0D213E8178006CF1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BBFC0B213E8178006CF1E9 /* Main.storyboard */; };
+		84BBFC0F213E8178006CF1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BBFC0E213E8178006CF1E9 /* Assets.xcassets */; };
+		84BBFC12213E8179006CF1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BBFC10213E8179006CF1E9 /* LaunchScreen.storyboard */; };
+		84C040202149F952005F8D9A /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 84C0401F2149F952005F8D9A /* main.jsbundle */; };
+		84F7F5CB21475DDA0041D8BE /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59121475DDA0041D8BE /* ToastWindow.swift */; };
+		84F7F5CC21475DDA0041D8BE /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59221475DDA0041D8BE /* ToastView.swift */; };
+		84F7F5CD21475DDA0041D8BE /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59321475DDA0041D8BE /* Toast.swift */; };
+		84F7F5CE21475DDA0041D8BE /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59421475DDA0041D8BE /* ToastCenter.swift */; };
+		84F7F5CF21475DDA0041D8BE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59621475DDA0041D8BE /* Reachability.swift */; };
+		84F7F5D021475DDA0041D8BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59821475DDA0041D8BE /* Constants.swift */; };
+		84F7F5D121475DDA0041D8BE /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59921475DDA0041D8BE /* Language.swift */; };
+		84F7F5D221475DDA0041D8BE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59A21475DDA0041D8BE /* Image.swift */; };
+		84F7F5D321475DDA0041D8BE /* ExImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59B21475DDA0041D8BE /* ExImage.swift */; };
+		84F7F5D421475DDA0041D8BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59C21475DDA0041D8BE /* Utils.swift */; };
+		84F7F5D521475DDA0041D8BE /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59D21475DDA0041D8BE /* UICoordinator.swift */; };
+		84F7F5D621475DDA0041D8BE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F59E21475DDA0041D8BE /* Color.swift */; };
+		84F7F5D721475DDA0041D8BE /* DatePickerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5A121475DDA0041D8BE /* DatePickerModule.m */; };
+		84F7F5D821475DDA0041D8BE /* DatePickerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5A221475DDA0041D8BE /* DatePickerModule.swift */; };
+		84F7F5D921475DDA0041D8BE /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5A521475DDA0041D8BE /* DatePickerView.swift */; };
+		84F7F5DA21475DDA0041D8BE /* SchedulingBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5A621475DDA0041D8BE /* SchedulingBookVC.swift */; };
+		84F7F5DB21475DDA0041D8BE /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F5A721475DDA0041D8BE /* Schedule.storyboard */; };
+		84F7F5DC21475DDA0041D8BE /* NativeTcpModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5A921475DDA0041D8BE /* NativeTcpModule.swift */; };
+		84F7F5DD21475DDA0041D8BE /* TCPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5AA21475DDA0041D8BE /* TCPManager.swift */; };
+		84F7F5DE21475DDA0041D8BE /* RNMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5AB21475DDA0041D8BE /* RNMessage.swift */; };
+		84F7F5DF21475DDA0041D8BE /* NativeTcpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5AC21475DDA0041D8BE /* NativeTcpModule.m */; };
+		84F7F5E021475DDA0041D8BE /* MediaModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5AE21475DDA0041D8BE /* MediaModule.m */; };
+		84F7F5E121475DDA0041D8BE /* MediaModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5AF21475DDA0041D8BE /* MediaModule.swift */; };
+		84F7F5E221475DDA0041D8BE /* FusedLocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B121475DDA0041D8BE /* FusedLocationModule.m */; };
+		84F7F5E321475DDA0041D8BE /* FusedLocationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B221475DDA0041D8BE /* FusedLocationModule.swift */; };
+		84F7F5E421475DDA0041D8BE /* NativeAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B521475DDA0041D8BE /* NativeAppModule.swift */; };
+		84F7F5E521475DDA0041D8BE /* NativeAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B621475DDA0041D8BE /* NativeAppModule.m */; };
+		84F7F5E621475DDA0041D8BE /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B721475DDA0041D8BE /* PermissionManager.swift */; };
+		84F7F5E721475DDA0041D8BE /* LifeCycleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5B921475DDA0041D8BE /* LifeCycleModule.m */; };
+		84F7F5E821475DDA0041D8BE /* LifeCycleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5BA21475DDA0041D8BE /* LifeCycleModule.swift */; };
+		84F7F5E921475DDA0041D8BE /* NativeLinkModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5BC21475DDA0041D8BE /* NativeLinkModule.m */; };
+		84F7F5EA21475DDA0041D8BE /* NativeLinkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5BD21475DDA0041D8BE /* NativeLinkModule.swift */; };
+		84F7F5EB21475DDA0041D8BE /* ToastModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5BF21475DDA0041D8BE /* ToastModule.m */; };
+		84F7F5EC21475DDA0041D8BE /* ToastModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F5C021475DDA0041D8BE /* ToastModule.swift */; };
+		84F7F5ED21475DDA0041D8BE /* dispatched.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F5C321475DDA0041D8BE /* dispatched.mp3 */; };
+		84F7F5EE21475DDA0041D8BE /* InforPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F5C521475DDA0041D8BE /* InforPlist.strings */; };
+		84F7F5EF21475DDA0041D8BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F5C721475DDA0041D8BE /* Localizable.strings */; };
+		B548C607C448448283FD75F9 /* libPods-G7Taxi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A449359C8203FD0B3D962064 /* libPods-G7Taxi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4089C41946FE9DCFF815BB80 /* Pods-G7Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G7Taxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-G7Taxi/Pods-G7Taxi.release.xcconfig"; sourceTree = "<group>"; };
+		84BBFC04213E8178006CF1E9 /* G7Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G7Taxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BBFC07213E8178006CF1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BBFC09213E8178006CF1E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84BBFC0C213E8178006CF1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BBFC0E213E8178006CF1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BBFC11213E8179006CF1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BBFC13213E8179006CF1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C0401F2149F952005F8D9A /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		84F7F59121475DDA0041D8BE /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
+		84F7F59221475DDA0041D8BE /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		84F7F59321475DDA0041D8BE /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		84F7F59421475DDA0041D8BE /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
+		84F7F59621475DDA0041D8BE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		84F7F59821475DDA0041D8BE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84F7F59921475DDA0041D8BE /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		84F7F59A21475DDA0041D8BE /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		84F7F59B21475DDA0041D8BE /* ExImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExImage.swift; sourceTree = "<group>"; };
+		84F7F59C21475DDA0041D8BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		84F7F59D21475DDA0041D8BE /* UICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
+		84F7F59E21475DDA0041D8BE /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		84F7F5A121475DDA0041D8BE /* DatePickerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerModule.m; sourceTree = "<group>"; };
+		84F7F5A221475DDA0041D8BE /* DatePickerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerModule.swift; sourceTree = "<group>"; };
+		84F7F5A521475DDA0041D8BE /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		84F7F5A621475DDA0041D8BE /* SchedulingBookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulingBookVC.swift; sourceTree = "<group>"; };
+		84F7F5A721475DDA0041D8BE /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		84F7F5A921475DDA0041D8BE /* NativeTcpModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeTcpModule.swift; sourceTree = "<group>"; };
+		84F7F5AA21475DDA0041D8BE /* TCPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPManager.swift; sourceTree = "<group>"; };
+		84F7F5AB21475DDA0041D8BE /* RNMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMessage.swift; sourceTree = "<group>"; };
+		84F7F5AC21475DDA0041D8BE /* NativeTcpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTcpModule.m; sourceTree = "<group>"; };
+		84F7F5AE21475DDA0041D8BE /* MediaModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaModule.m; sourceTree = "<group>"; };
+		84F7F5AF21475DDA0041D8BE /* MediaModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaModule.swift; sourceTree = "<group>"; };
+		84F7F5B121475DDA0041D8BE /* FusedLocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FusedLocationModule.m; sourceTree = "<group>"; };
+		84F7F5B221475DDA0041D8BE /* FusedLocationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusedLocationModule.swift; sourceTree = "<group>"; };
+		84F7F5B421475DDA0041D8BE /* NativeAppModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAppModule.h; sourceTree = "<group>"; };
+		84F7F5B521475DDA0041D8BE /* NativeAppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAppModule.swift; sourceTree = "<group>"; };
+		84F7F5B621475DDA0041D8BE /* NativeAppModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppModule.m; sourceTree = "<group>"; };
+		84F7F5B721475DDA0041D8BE /* PermissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		84F7F5B921475DDA0041D8BE /* LifeCycleModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleModule.m; sourceTree = "<group>"; };
+		84F7F5BA21475DDA0041D8BE /* LifeCycleModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCycleModule.swift; sourceTree = "<group>"; };
+		84F7F5BC21475DDA0041D8BE /* NativeLinkModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeLinkModule.m; sourceTree = "<group>"; };
+		84F7F5BD21475DDA0041D8BE /* NativeLinkModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeLinkModule.swift; sourceTree = "<group>"; };
+		84F7F5BF21475DDA0041D8BE /* ToastModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastModule.m; sourceTree = "<group>"; };
+		84F7F5C021475DDA0041D8BE /* ToastModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastModule.swift; sourceTree = "<group>"; };
+		84F7F5C121475DDA0041D8BE /* Bridge_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bridge_Header.h; path = ../../StaxiUser/ios/Bridge_Header.h; sourceTree = "<group>"; };
+		84F7F5C321475DDA0041D8BE /* dispatched.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dispatched.mp3; sourceTree = "<group>"; };
+		84F7F5C621475DDA0041D8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InforPlist.strings; sourceTree = "<group>"; };
+		84F7F5C821475DDA0041D8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84F7F5C921475DDA0041D8BE /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InforPlist.strings; sourceTree = "<group>"; };
+		84F7F5CA21475DDA0041D8BE /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A449359C8203FD0B3D962064 /* libPods-G7Taxi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-G7Taxi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F214A59DEF511B3B439ECCD9 /* Pods-G7Taxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G7Taxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-G7Taxi/Pods-G7Taxi.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BBFC01213E8178006CF1E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B548C607C448448283FD75F9 /* libPods-G7Taxi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8D5A1C2DB1B2E31A23F389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F214A59DEF511B3B439ECCD9 /* Pods-G7Taxi.debug.xcconfig */,
+				4089C41946FE9DCFF815BB80 /* Pods-G7Taxi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84BBFBFB213E8178006CF1E9 = {
+			isa = PBXGroup;
+			children = (
+				84C0401F2149F952005F8D9A /* main.jsbundle */,
+				84F7F5C221475DDA0041D8BE /* Assets */,
+				84F7F5C121475DDA0041D8BE /* Bridge_Header.h */,
+				84F7F58E21475DDA0041D8BE /* SourceCode */,
+				84BBFC06213E8178006CF1E9 /* G7Taxi */,
+				84BBFC05213E8178006CF1E9 /* Products */,
+				3F8D5A1C2DB1B2E31A23F389 /* Pods */,
+				F14CA4AA028D48E45F17214D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84BBFC05213E8178006CF1E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BBFC04213E8178006CF1E9 /* G7Taxi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BBFC06213E8178006CF1E9 /* G7Taxi */ = {
+			isa = PBXGroup;
+			children = (
+				84BBFC07213E8178006CF1E9 /* AppDelegate.swift */,
+				84BBFC09213E8178006CF1E9 /* ViewController.swift */,
+				84BBFC0B213E8178006CF1E9 /* Main.storyboard */,
+				84BBFC0E213E8178006CF1E9 /* Assets.xcassets */,
+				84BBFC10213E8179006CF1E9 /* LaunchScreen.storyboard */,
+				84BBFC13213E8179006CF1E9 /* Info.plist */,
+			);
+			path = G7Taxi;
+			sourceTree = "<group>";
+		};
+		84F7F58E21475DDA0041D8BE /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F58F21475DDA0041D8BE /* Libs */,
+				84F7F59721475DDA0041D8BE /* Common */,
+				84F7F59F21475DDA0041D8BE /* Modules */,
+			);
+			name = SourceCode;
+			path = ../../StaxiUser/ios/SourceCode;
+			sourceTree = "<group>";
+		};
+		84F7F58F21475DDA0041D8BE /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F59021475DDA0041D8BE /* Toaster */,
+				84F7F59521475DDA0041D8BE /* Reachability */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		84F7F59021475DDA0041D8BE /* Toaster */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F59121475DDA0041D8BE /* ToastWindow.swift */,
+				84F7F59221475DDA0041D8BE /* ToastView.swift */,
+				84F7F59321475DDA0041D8BE /* Toast.swift */,
+				84F7F59421475DDA0041D8BE /* ToastCenter.swift */,
+			);
+			path = Toaster;
+			sourceTree = "<group>";
+		};
+		84F7F59521475DDA0041D8BE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F59621475DDA0041D8BE /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		84F7F59721475DDA0041D8BE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F59821475DDA0041D8BE /* Constants.swift */,
+				84F7F59921475DDA0041D8BE /* Language.swift */,
+				84F7F59A21475DDA0041D8BE /* Image.swift */,
+				84F7F59B21475DDA0041D8BE /* ExImage.swift */,
+				84F7F59C21475DDA0041D8BE /* Utils.swift */,
+				84F7F59D21475DDA0041D8BE /* UICoordinator.swift */,
+				84F7F59E21475DDA0041D8BE /* Color.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84F7F59F21475DDA0041D8BE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5A021475DDA0041D8BE /* DatePickerModule */,
+				84F7F5A321475DDA0041D8BE /* SubVCs */,
+				84F7F5A821475DDA0041D8BE /* NativeTcpModule */,
+				84F7F5AD21475DDA0041D8BE /* MediaModule */,
+				84F7F5B021475DDA0041D8BE /* FusedLocationModule */,
+				84F7F5B321475DDA0041D8BE /* NativeAppModule */,
+				84F7F5B821475DDA0041D8BE /* LifeCycleModule */,
+				84F7F5BB21475DDA0041D8BE /* NativeLinkModule */,
+				84F7F5BE21475DDA0041D8BE /* ToastModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84F7F5A021475DDA0041D8BE /* DatePickerModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5A121475DDA0041D8BE /* DatePickerModule.m */,
+				84F7F5A221475DDA0041D8BE /* DatePickerModule.swift */,
+			);
+			path = DatePickerModule;
+			sourceTree = "<group>";
+		};
+		84F7F5A321475DDA0041D8BE /* SubVCs */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5A421475DDA0041D8BE /* SchedulingBookVC */,
+				84F7F5A721475DDA0041D8BE /* Schedule.storyboard */,
+			);
+			path = SubVCs;
+			sourceTree = "<group>";
+		};
+		84F7F5A421475DDA0041D8BE /* SchedulingBookVC */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5A521475DDA0041D8BE /* DatePickerView.swift */,
+				84F7F5A621475DDA0041D8BE /* SchedulingBookVC.swift */,
+			);
+			path = SchedulingBookVC;
+			sourceTree = "<group>";
+		};
+		84F7F5A821475DDA0041D8BE /* NativeTcpModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5A921475DDA0041D8BE /* NativeTcpModule.swift */,
+				84F7F5AA21475DDA0041D8BE /* TCPManager.swift */,
+				84F7F5AB21475DDA0041D8BE /* RNMessage.swift */,
+				84F7F5AC21475DDA0041D8BE /* NativeTcpModule.m */,
+			);
+			path = NativeTcpModule;
+			sourceTree = "<group>";
+		};
+		84F7F5AD21475DDA0041D8BE /* MediaModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5AE21475DDA0041D8BE /* MediaModule.m */,
+				84F7F5AF21475DDA0041D8BE /* MediaModule.swift */,
+			);
+			path = MediaModule;
+			sourceTree = "<group>";
+		};
+		84F7F5B021475DDA0041D8BE /* FusedLocationModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5B121475DDA0041D8BE /* FusedLocationModule.m */,
+				84F7F5B221475DDA0041D8BE /* FusedLocationModule.swift */,
+			);
+			path = FusedLocationModule;
+			sourceTree = "<group>";
+		};
+		84F7F5B321475DDA0041D8BE /* NativeAppModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5B421475DDA0041D8BE /* NativeAppModule.h */,
+				84F7F5B521475DDA0041D8BE /* NativeAppModule.swift */,
+				84F7F5B621475DDA0041D8BE /* NativeAppModule.m */,
+				84F7F5B721475DDA0041D8BE /* PermissionManager.swift */,
+			);
+			path = NativeAppModule;
+			sourceTree = "<group>";
+		};
+		84F7F5B821475DDA0041D8BE /* LifeCycleModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5B921475DDA0041D8BE /* LifeCycleModule.m */,
+				84F7F5BA21475DDA0041D8BE /* LifeCycleModule.swift */,
+			);
+			path = LifeCycleModule;
+			sourceTree = "<group>";
+		};
+		84F7F5BB21475DDA0041D8BE /* NativeLinkModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5BC21475DDA0041D8BE /* NativeLinkModule.m */,
+				84F7F5BD21475DDA0041D8BE /* NativeLinkModule.swift */,
+			);
+			path = NativeLinkModule;
+			sourceTree = "<group>";
+		};
+		84F7F5BE21475DDA0041D8BE /* ToastModule */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5BF21475DDA0041D8BE /* ToastModule.m */,
+				84F7F5C021475DDA0041D8BE /* ToastModule.swift */,
+			);
+			path = ToastModule;
+			sourceTree = "<group>";
+		};
+		84F7F5C221475DDA0041D8BE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5C321475DDA0041D8BE /* dispatched.mp3 */,
+				84F7F5C421475DDA0041D8BE /* Localizable */,
+			);
+			name = Assets;
+			path = ../../StaxiUser/ios/Assets;
+			sourceTree = "<group>";
+		};
+		84F7F5C421475DDA0041D8BE /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F5C521475DDA0041D8BE /* InforPlist.strings */,
+				84F7F5C721475DDA0041D8BE /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		F14CA4AA028D48E45F17214D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A449359C8203FD0B3D962064 /* libPods-G7Taxi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BBFC03213E8178006CF1E9 /* G7Taxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BBFC16213E8179006CF1E9 /* Build configuration list for PBXNativeTarget "G7Taxi" */;
+			buildPhases = (
+				D4BB3D779788928B558A8472 /* [CP] Check Pods Manifest.lock */,
+				84BBFC00213E8178006CF1E9 /* Sources */,
+				84BBFC01213E8178006CF1E9 /* Frameworks */,
+				84BBFC02213E8178006CF1E9 /* Resources */,
+				E98195C20EF32D888846752E /* [CP] Copy Pods Resources */,
+				84E36C6B2147A5430046B510 /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = G7Taxi;
+			productName = G7Taxi;
+			productReference = 84BBFC04213E8178006CF1E9 /* G7Taxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BBFBFC213E8178006CF1E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Administrator;
+				TargetAttributes = {
+					84BBFC03213E8178006CF1E9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 84BBFBFF213E8178006CF1E9 /* Build configuration list for PBXProject "G7Taxi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 84BBFBFB213E8178006CF1E9;
+			productRefGroup = 84BBFC05213E8178006CF1E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BBFC03213E8178006CF1E9 /* G7Taxi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BBFC02213E8178006CF1E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F7F5EE21475DDA0041D8BE /* InforPlist.strings in Resources */,
+				84BBFC12213E8179006CF1E9 /* LaunchScreen.storyboard in Resources */,
+				84BBFC0F213E8178006CF1E9 /* Assets.xcassets in Resources */,
+				84F7F5EF21475DDA0041D8BE /* Localizable.strings in Resources */,
+				84F7F5ED21475DDA0041D8BE /* dispatched.mp3 in Resources */,
+				84BBFC0D213E8178006CF1E9 /* Main.storyboard in Resources */,
+				84F7F5DB21475DDA0041D8BE /* Schedule.storyboard in Resources */,
+				84C040202149F952005F8D9A /* main.jsbundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84E36C6B2147A5430046B510 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		D4BB3D779788928B558A8472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-G7Taxi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E98195C20EF32D888846752E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-G7Taxi/Pods-G7Taxi-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/QBImagePickerController/QBImagePicker.bundle",
+				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-G7Taxi/Pods-G7Taxi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BBFC00213E8178006CF1E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F7F5E321475DDA0041D8BE /* FusedLocationModule.swift in Sources */,
+				84F7F5EC21475DDA0041D8BE /* ToastModule.swift in Sources */,
+				84F7F5CF21475DDA0041D8BE /* Reachability.swift in Sources */,
+				84F7F5E021475DDA0041D8BE /* MediaModule.m in Sources */,
+				84F7F5DE21475DDA0041D8BE /* RNMessage.swift in Sources */,
+				84F7F5CC21475DDA0041D8BE /* ToastView.swift in Sources */,
+				84F7F5D521475DDA0041D8BE /* UICoordinator.swift in Sources */,
+				84F7F5D821475DDA0041D8BE /* DatePickerModule.swift in Sources */,
+				84F7F5E821475DDA0041D8BE /* LifeCycleModule.swift in Sources */,
+				84F7F5E921475DDA0041D8BE /* NativeLinkModule.m in Sources */,
+				84BBFC0A213E8178006CF1E9 /* ViewController.swift in Sources */,
+				84F7F5D121475DDA0041D8BE /* Language.swift in Sources */,
+				84F7F5DC21475DDA0041D8BE /* NativeTcpModule.swift in Sources */,
+				84F7F5CD21475DDA0041D8BE /* Toast.swift in Sources */,
+				84BBFC08213E8178006CF1E9 /* AppDelegate.swift in Sources */,
+				84F7F5DD21475DDA0041D8BE /* TCPManager.swift in Sources */,
+				84F7F5CE21475DDA0041D8BE /* ToastCenter.swift in Sources */,
+				84F7F5DF21475DDA0041D8BE /* NativeTcpModule.m in Sources */,
+				84F7F5DA21475DDA0041D8BE /* SchedulingBookVC.swift in Sources */,
+				84F7F5D921475DDA0041D8BE /* DatePickerView.swift in Sources */,
+				84F7F5CB21475DDA0041D8BE /* ToastWindow.swift in Sources */,
+				84F7F5E221475DDA0041D8BE /* FusedLocationModule.m in Sources */,
+				84F7F5D621475DDA0041D8BE /* Color.swift in Sources */,
+				84F7F5E121475DDA0041D8BE /* MediaModule.swift in Sources */,
+				84F7F5D021475DDA0041D8BE /* Constants.swift in Sources */,
+				84F7F5E521475DDA0041D8BE /* NativeAppModule.m in Sources */,
+				84F7F5E421475DDA0041D8BE /* NativeAppModule.swift in Sources */,
+				84F7F5E721475DDA0041D8BE /* LifeCycleModule.m in Sources */,
+				84F7F5D221475DDA0041D8BE /* Image.swift in Sources */,
+				84F7F5D321475DDA0041D8BE /* ExImage.swift in Sources */,
+				84F7F5D421475DDA0041D8BE /* Utils.swift in Sources */,
+				84F7F5E621475DDA0041D8BE /* PermissionManager.swift in Sources */,
+				84F7F5EA21475DDA0041D8BE /* NativeLinkModule.swift in Sources */,
+				84F7F5D721475DDA0041D8BE /* DatePickerModule.m in Sources */,
+				84F7F5EB21475DDA0041D8BE /* ToastModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BBFC0B213E8178006CF1E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BBFC0C213E8178006CF1E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BBFC10213E8179006CF1E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BBFC11213E8179006CF1E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84F7F5C521475DDA0041D8BE /* InforPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F7F5C621475DDA0041D8BE /* en */,
+				84F7F5C921475DDA0041D8BE /* vi */,
+			);
+			name = InforPlist.strings;
+			sourceTree = "<group>";
+		};
+		84F7F5C721475DDA0041D8BE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F7F5C821475DDA0041D8BE /* en */,
+				84F7F5CA21475DDA0041D8BE /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BBFC14213E8179006CF1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84BBFC15213E8179006CF1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BBFC17213E8179006CF1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F214A59DEF511B3B439ECCD9 /* Pods-G7Taxi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQ4F7PFFSM;
+				INFOPLIST_FILE = G7Taxi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binhanh.G7Taxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ../../StaxiUser/ios/Bridge_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BBFC18213E8179006CF1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4089C41946FE9DCFF815BB80 /* Pods-G7Taxi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQ4F7PFFSM;
+				INFOPLIST_FILE = G7Taxi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binhanh.G7Taxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ../../StaxiUser/ios/Bridge_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BBFBFF213E8178006CF1E9 /* Build configuration list for PBXProject "G7Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BBFC14213E8179006CF1E9 /* Debug */,
+				84BBFC15213E8179006CF1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BBFC16213E8179006CF1E9 /* Build configuration list for PBXNativeTarget "G7Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BBFC17213E8179006CF1E9 /* Debug */,
+				84BBFC18213E8179006CF1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BBFBFC213E8178006CF1E9 /* Project object */;
+}

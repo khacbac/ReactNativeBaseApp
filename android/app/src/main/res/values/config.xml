@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- logfolder để lưu long -->
+    <string name="LOGFILE_FOLER">User_HN_G7Taxi</string>
+
+    <string name="TCP_IP">125.212.226.59</string>
+
+    <integer name="TCP_PORT">6302</integer>
+
+    <string name="HTTP_API">http://125.212.226.59:6308/api/</string>
+
+    <string name="KEY_MAP">AIzaSyDPSqrc29jQ4psuq5ukus4cp_o7sFsDpx8</string>
+
+    <!--<string name="TCP_IP">kh.g7.staxi.vn</string>-->
+
+    <!--<integer name="TCP_PORT">7502</integer>-->
+
+    <!--<string name="HTTP_API">http://api.g7.staxi.vn:7508/api/</string>-->
+
+    <!--<string name="KEY_MAP">AIzaSyDPSqrc29jQ4psuq5ukus4cp_o7sFsDpx8</string>-->
+
+</resources>

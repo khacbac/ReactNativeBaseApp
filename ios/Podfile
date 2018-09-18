@@ -1,0 +1,84 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'G7Taxi' do
+  rn_path = '../node_modules/react-native'
+  rn_maps_path = '../node_modules/react-native-maps'
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  #use_frameworks!
+
+  # Pods for G7Taxi
+  # React Native third party dependencies podspecs
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',\
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    # Add any other subspecs you want to use in your project
+  ]
+	pod 'DoubleConversion', :podspec => "#{rn_path}/third-party-podspecs/DoubleConversion.podspec"
+	pod 'glog', :podspec => "#{rn_path}/third-party-podspecs/glog.podspec"
+	pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
+	pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
+
+	pod 'react-native-sqlite-storage', :path => '../node_modules/react-native-sqlite-storage'
+	pod 'RNFS', :path => '../node_modules/react-native-fs'
+	pod 'RNImageCropPicker', :path =>  '../node_modules/react-native-image-crop-picker'
+
+	  pod 'GoogleMaps' 
+	  pod 'Google-Maps-iOS-Utils'
+	  pod 'react-native-maps', path: rn_maps_path
+	  pod 'react-native-google-maps', path: rn_maps_path  # Remove this line if you don't want to support GoogleMaps on iOS
+	  pod 'CocoaAsyncSocket'
+	  #pod 'ReachabilitySwift'
+	  #pod 'Toaster'
+	  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+end
+
+def change_lines_in_file(file_path, &change)
+  print "Fixing #{file_path}...\n"
+
+  contents = []
+
+  file = File.open(file_path, 'r')
+  file.each_line do | line |
+    contents << line
+  end
+  file.close
+
+  File.open(file_path, 'w') do |f|
+    f.puts(change.call(contents))
+  end
+end
+
+post_install do |installer|
+
+  installer.pods_project.targets.each do |target|
+    if target.name == 'react-native-google-maps'
+      target.build_configurations.each do |config|
+        config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+      end
+    end
+  end
+
+
+  # https://github.com/facebook/react-native/issues/13198
+  change_lines_in_file('../node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h') do |lines|
+    lines.map { |line| line.include?("#import <RCTAnimation/RCTValueAnimatedNode.h>") ? '#import "RCTValueAnimatedNode.h"' : line }
+  end
+
+    # https://github.com/facebook/react-native/issues/16039
+  change_lines_in_file('../node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m') do |lines|
+    lines.map { |line| line.include?("#import <fishhook/fishhook.h>") ? '#import "fishhook.h"' : line }
+  end
+
+end
